@@ -7,5 +7,5 @@ namespace GrotonSchool\Slim\GAE;
 interface SettingsInterface
 {
     public function getProjectId(): string;
-    public function getName(): string;
+    public function getProjectUrl(): string;
 }
