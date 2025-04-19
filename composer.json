@@ -1,5 +1,6 @@
 {
   "name": "groton-school/slim-gae-shim",
+  "description": "Shim for Slim Skelton to run on Google App Engine",
   "authors": [
     {
       "name": "Seth Battis",
