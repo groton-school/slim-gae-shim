@@ -30,17 +30,15 @@ The shim expects a default [slim-skeleton](https://github.com/slimphp/Slim-Skele
 
 4. Inject Google App Engine environment variables into settings:
 
-   a. [Implement `SettingsInterface`](https://github.com/groton-school/slim-skeleton/blob/9431c827f440648768d8f5d75630c84be4b8b428/src/Application/Settings/SettingsInterface.php#L11-L12)
+   a. [Implement `SettingsInterface`](https://github.com/groton-school/slim-skeleton/blob/0b32f964d753376ed2c2d9af4460e96342bbe919/src/Application/Settings/SettingsInterface.php#L11-L12)
 
-   b. [Define the `SettingsInterface` dependency](https://github.com/groton-school/slim-skeleton/blob/9431c827f440648768d8f5d75630c84be4b8b428/app/dependencies.php#L46)
+   b. [Define the `SettingsInterface` dependency](https://github.com/groton-school/slim-skeleton/blob/0b32f964d753376ed2c2d9af4460e96342bbe919/app/dependencies.php#L46)
 
-   c. [Inject the project URL and ID into your settings](https://github.com/groton-school/slim-skeleton/blob/9431c827f440648768d8f5d75630c84be4b8b428/app/settings.php#L24-L25)
+   c. [Inject the project URL and ID into your settings](https://github.com/groton-school/slim-skeleton/blob/0b32f964d753376ed2c2d9af4460e96342bbe919/app/dependencies.php#L21)
 
-5. Optionally (but recommendedly), suppress error log messages about Google App Engine start/stop requests by...
+5. Optionally (but recommendedly), suppress error log messages about Google App Engine start/stop requests by [defining routes for those requests](https://github.com/groton-school/slim-skeleton/blob/0b32f964d753376ed2c2d9af4460e96342bbe919/app/routes.php#L17)
 
-   d. [Definine routes for those requests](https://github.com/groton-school/slim-skeleton/blob/9431c827f440648768d8f5d75630c84be4b8b428/app/routes.php#L22)
-
-6. Deploy to Google App Engine using the [Node](https://nodejs.) `deploy` wizard provided.
+6. Deploy to Google App Engine using the [Node](https://nodejs.org) `deploy` wizard provided.
 
    a. Configure a [Billing Account](https://console.cloud.google.com/billing) with your Google Cloud account, if not already done.
 
