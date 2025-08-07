@@ -4,8 +4,36 @@ Shim for Slim Skeleton to run on Google App Engine
 
 [![Latest Version](https://img.shields.io/packagist/v/groton-school/slim-gae-shim.svg)](https://packagist.org/packages/groton-school/slim-gae-shim)
 
-See [groton-school/slim-gae-skeleton](https://github.com/groton-school/slim-gae-skeleton) for use. Or just use that skeleton to create your poject:
+## Install
 
-```sh
-composer create-project --stability dev groton-school/slim-gae-skeleton [my-app-name]
+```bash
+composer require groton-school/slim-gae-shim
 ```
+
+## Use
+
+The shim expects a default [slim-skeleton](https://github.com/slimphp/Slim-Skeleton#readme) layout (and configures GAE to reflect this).
+
+1. In your `composer.json` add a `post-update-cmd` update script:
+
+```json
+{
+  "scripts": {
+    "post-update-cmd": "GrotonSchool\\Slim\\GAE\\Scripts::installGAEFiles"
+  }
+}
+```
+
+2. Run `composer update`
+
+3. Optionally, add `*.bak` to your `.gitignore` to suppress backed up prior versions of the GAE config files
+
+4. Optionally (but recommendedly), suppress error log messages about Google App Engine start/stop requests by...
+
+   a. [Implement `SettingsInterface`](https://github.com/groton-school/slim-skeleton/blob/17a10b398aff956544d8d281a12e07e330198274/src/Application/Settings/SettingsInterface.php#L11-L12)
+
+   b. [Define the `SettingsInterface` dependency](https://github.com/groton-school/slim-skeleton/blob/17a10b398aff956544d8d281a12e07e330198274/app/dependencies.php#L46)
+
+   c. [Inject the project URL and ID into your settings](https://github.com/groton-school/slim-skeleton/blob/17a10b398aff956544d8d281a12e07e330198274/app/settings.php#L24-L25)
+
+   d. [Definine routes for those requests](https://github.com/groton-school/slim-skeleton/blob/17a10b398aff956544d8d281a12e07e330198274/app/routes.php#L22-L23)
