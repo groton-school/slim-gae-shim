@@ -12,7 +12,7 @@ class Scripts
 {
     private static Filesystem $filesystem;
 
-    private static function fs()
+    private static function fs(): Filesystem
     {
         if (!isset(self::$filesystem)) {
             self::$filesystem = new Filesystem();
@@ -20,7 +20,7 @@ class Scripts
         return self::$filesystem;
     }
 
-    public static function installGAEFiles(Event $event)
+    public static function installGAEFiles(Event $event): void
     {
         $projectPath = getcwd();
         $templatePath = Path::join(__DIR__, '/../template');
@@ -34,6 +34,7 @@ class Scripts
                 default:
                     $src = Path::join($templatePath, $fileName);
                     $dest = Path::join($projectPath, $fileName);
+                    $io->write("Checking $dest");
                     if (!self::fileDataEqual($src, $dest)) {
                         if (self::fs()->exists($dest)) {
                             $backup = self::backupFile($dest);
@@ -54,7 +55,7 @@ class Scripts
     /**
      * @see https://stackoverflow.com/a/3060247
      */
-    private static function fileDataEqual($a, $b)
+    private static function fileDataEqual($a, $b): bool
     {
         // Check if filesize is different
         if (filesize($a) !== filesize($b)) {
@@ -80,7 +81,7 @@ class Scripts
     }
 
 
-    private static function backupFile(string $filePath)
+    private static function backupFile(string $filePath): string
     {
         $backupPath = "$filePath.bak";
         if (self::fs()->exists($backupPath)) {
