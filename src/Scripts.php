@@ -25,7 +25,7 @@ class Scripts
         $projectPath = getcwd();
         $templatePath = Path::join(__DIR__, '/../template');
         $io = $event->getIO();
-        $io->info('Checking Google App Engine configuration...');
+        $io->write('Checking Google App Engine configuration...');
         foreach (scandir($templatePath) as $fileName) {
             switch ($fileName) {
                 case '.':
@@ -36,16 +36,19 @@ class Scripts
                     $dest = Path::join($projectPath, $fileName);
                     if (!self::fileDataEqual($src, $dest)) {
                         if (self::fs()->exists($dest)) {
-                            self::backupFile($dest);
+                            $backup = self::backupFile($dest);
+                            $io->write("Backed up $dest to $backup");
                         }
                         if (is_dir($src)) {
                             self::fs()->mirror($src, $dest);
                         } else {
                             self::fs()->copy($src, $dest);
                         }
+                        $io->write("Installed $dest");
                     }
             }
         }
+        $io->write("Google App Engine configuration matches groton-school/slim-gae-shim.");
     }
 
     /**
@@ -88,5 +91,6 @@ class Scripts
             } while (self::fs()->exists($backupPath));
         }
         self::fs()->rename($filePath, $backupPath);
+        return $backupPath;
     }
 }
