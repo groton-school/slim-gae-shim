@@ -8,4 +8,5 @@ interface SettingsInterface
 {
     public function getProjectId(): string;
     public function getProjectUrl(): string;
+    public function getLoggerName(): string;
 }
