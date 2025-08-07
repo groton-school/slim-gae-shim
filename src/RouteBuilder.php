@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace GrotonSchool\Slim\GAE;
 
 use GrotonSchool\Slim\GAE\Actions\EmptyAction;
