@@ -4,6 +4,15 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [1.3.0](https://github.com/groton-school/slim-gae-shim/compare/v1.2.1...v1.3.0) (2025-08-07)
+
+### Features
+
+* Inject Dependencies using `Dependencies::inject()` ([18a934](https://github.com/groton-school/slim-gae-shim/commit/18a9349536429cb98679dc61cb2f10fff066ebbf))
+
+
+---
+
 ## [1.2.1](https://github.com/groton-school/slim-gae-shim/compare/v1.2.0...v1.2.1) (2025-08-07)
 
 ### Bug Fixes
