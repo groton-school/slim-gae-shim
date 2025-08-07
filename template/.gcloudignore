@@ -1,11 +1,10 @@
 *
 .DS_Store
 .htaccess
-!/.env
 !/app.yaml
 !/php.ini
 !/composer.*
-/composer.lock
 !/app
 !/public
-!/src*
+!/src
+!/views
