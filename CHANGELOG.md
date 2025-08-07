@@ -4,6 +4,15 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [1.2.1](https://github.com/groton-school/slim-gae-shim/compare/v1.2.0...v1.2.1) (2025-08-07)
+
+### Bug Fixes
+
+* Handle nested directories in template ([b9fdf6](https://github.com/groton-school/slim-gae-shim/commit/b9fdf674706bba11f7f9e3e0c91b93b17b01a8d3))
+
+
+---
+
 ## [1.2.0](https://github.com/groton-school/slim-gae-shim/compare/v1.1.0...v1.2.0) (2025-08-07)
 
 ### Features
