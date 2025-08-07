@@ -4,6 +4,15 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [1.2.0](https://github.com/groton-school/slim-gae-shim/compare/v1.1.0...v1.2.0) (2025-08-07)
+
+### Features
+
+* Add Node deploy script ([396db4](https://github.com/groton-school/slim-gae-shim/commit/396db4999870a8387d589537263a790b5149520d))
+
+
+---
+
 ## [1.1.0](https://github.com/groton-school/slim-gae-shim/compare/v1.0.1...v1.1.0) (2025-08-07)
 
 ### Features
