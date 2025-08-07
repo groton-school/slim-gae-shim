@@ -24,6 +24,8 @@ class Scripts
     {
         $projectPath = getcwd();
         $templatePath = Path::join(__DIR__, '/../template');
+        $io = $event->getIO();
+        $io->info('Checking Google App Engine configuration...');
         foreach (scandir($templatePath) as $fileName) {
             switch ($fileName) {
                 case '.':
@@ -32,27 +34,59 @@ class Scripts
                 default:
                     $src = Path::join($templatePath, $fileName);
                     $dest = Path::join($projectPath, $fileName);
-                    if (self::fs()->exists($dest)) {
-                        self::numberedBackup($dest);
-                    }
-                    if (is_dir($src)) {
-                        self::fs()->mirror($src, $dest);
-                    } else {
-                        self::fs()->copy($src, $dest);
+                    if (!self::fileDataEqual($src, $dest)) {
+                        if (self::fs()->exists($dest)) {
+                            self::backupFile($dest);
+                        }
+                        if (is_dir($src)) {
+                            self::fs()->mirror($src, $dest);
+                        } else {
+                            self::fs()->copy($src, $dest);
+                        }
                     }
             }
         }
     }
 
-    private static function numberedBackup(string $filePath)
+    /**
+     * @see https://stackoverflow.com/a/3060247
+     */
+    private static function fileDataEqual($a, $b)
     {
-        if (self::fs()->exists("$filePath.bak")) {
-            $n = 1;
-            for ($n = 1; self::fs()->exists("$filePath.$n.bak"); $n++) {
-            }
-            self::fs()->rename($filePath, "$filePath.$n.bak");
-        } else {
-            self::fs()->rename($filePath, "$filePath.bak");
+        // Check if filesize is different
+        if (filesize($a) !== filesize($b)) {
+            return false;
         }
+
+        // Check if content is different
+        $ah = fopen($a, 'rb');
+        $bh = fopen($b, 'rb');
+
+        $result = true;
+        while (!feof($ah)) {
+            if (fread($ah, 8192) != fread($bh, 8192)) {
+                $result = false;
+                break;
+            }
+        }
+
+        fclose($ah);
+        fclose($bh);
+
+        return $result;
+    }
+
+
+    private static function backupFile(string $filePath)
+    {
+        $backupPath = "$filePath.bak";
+        if (self::fs()->exists($backupPath)) {
+            $n = 1;
+            do {
+                $backupPath = "$filePath.$n.bak";
+                $n++;
+            } while (self::fs()->exists($backupPath));
+        }
+        self::fs()->rename($filePath, $backupPath);
     }
 }
