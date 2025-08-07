@@ -1,10 +1,23 @@
 <!--- BEGIN HEADER -->
-
 # Changelog
 
 All notable changes to this project will be documented in this file.
-
 <!--- END HEADER -->
+
+## [1.1.0](https://github.com/groton-school/slim-gae-shim/compare/v1.0.1...v1.1.0) (2025-08-07)
+
+### Features
+
+* Add support for php-di@7.x ([5174d2](https://github.com/groton-school/slim-gae-shim/commit/5174d2c5cc1c1f6076e714135a6875b4d37c2dc4))
+* Post-package-update script `installGAEFiles()` ([cc72ec](https://github.com/groton-school/slim-gae-shim/commit/cc72ecce9f265e1a93af0f6cb3056f57530e26dc))
+* Use RouteBuilder to easily suppress GAE start/stop _ah requests in log ([af8597](https://github.com/groton-school/slim-gae-shim/commit/af8597dd2b0d91bfd0c129e0565bd4366e1d47a8))
+
+### Bug Fixes
+
+* Only backup changed files ([61646e](https://github.com/groton-school/slim-gae-shim/commit/61646e3956ce41e46fe585140959ad246f3073c6))
+
+
+---
 
 ## [1.0.1](https://github.com/groton-school/lti.slim-gae-shim/compare/v1.0.0...v1.0.1) (2025-07-26)
 
