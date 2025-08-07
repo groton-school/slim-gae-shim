@@ -39,3 +39,7 @@ The shim expects a default [slim-skeleton](https://github.com/slimphp/Slim-Skele
 5. Optionally (but recommendedly), suppress error log messages about Google App Engine start/stop requests by...
 
    d. [Definine routes for those requests](https://github.com/groton-school/slim-skeleton/blob/9431c827f440648768d8f5d75630c84be4b8b428/app/routes.php#L22)
+
+### groton-school/slim-skeleton@dev-lti/gae
+
+[groton-school/slim-skeleton](https://github.com/groton-school/slim-skeleton/tree/lti/gae) is the canonical example of how this shim is meant to be used.
