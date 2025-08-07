@@ -28,12 +28,14 @@ The shim expects a default [slim-skeleton](https://github.com/slimphp/Slim-Skele
 
 3. Optionally, add `*.bak` to your `.gitignore` to suppress backed up prior versions of the GAE config files
 
-4. Optionally (but recommendedly), suppress error log messages about Google App Engine start/stop requests by...
+4. Inject Google App Engine environment variables into settings:
 
    a. [Implement `SettingsInterface`](https://github.com/groton-school/slim-skeleton/blob/17a10b398aff956544d8d281a12e07e330198274/src/Application/Settings/SettingsInterface.php#L11-L12)
 
    b. [Define the `SettingsInterface` dependency](https://github.com/groton-school/slim-skeleton/blob/17a10b398aff956544d8d281a12e07e330198274/app/dependencies.php#L46)
 
    c. [Inject the project URL and ID into your settings](https://github.com/groton-school/slim-skeleton/blob/17a10b398aff956544d8d281a12e07e330198274/app/settings.php#L24-L25)
+
+5. Optionally (but recommendedly), suppress error log messages about Google App Engine start/stop requests by...
 
    d. [Definine routes for those requests](https://github.com/groton-school/slim-skeleton/blob/17a10b398aff956544d8d281a12e07e330198274/app/routes.php#L22-L23)
