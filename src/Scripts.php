@@ -34,7 +34,6 @@ class Scripts
                 default:
                     $src = Path::join($templatePath, $fileName);
                     $dest = Path::join($projectPath, $fileName);
-                    $io->write("Checking $dest");
                     if (!self::fileDataEqual($src, $dest)) {
                         if (self::fs()->exists($dest)) {
                             $backup = self::backupFile($dest);
