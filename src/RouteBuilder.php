@@ -6,12 +6,16 @@ namespace GrotonSchool\Slim\GAE;
 
 use GrotonSchool\Slim\GAE\Actions\EmptyAction;
 use Slim\App;
+use Slim\Interfaces\RouteCollectorProxyInterface;
+use Slim\Interfaces\RouteGroupInterface;
 
 class RouteBuilder
 {
-    public static function define(App $app)
+    public static function define(App $app): RouteGroupInterface
     {
         // return an empty string on GAE start/stop requests
-        $app->get('/_ah/{action:.*}', EmptyAction::class);
+        return $app->group('/_ah', function (RouteCollectorProxyInterface $ah) {
+            $ah->get('/{action:.*}', EmptyAction::class);
+        });
     }
 }
