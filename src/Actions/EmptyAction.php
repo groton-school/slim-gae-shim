@@ -4,13 +4,18 @@ declare(strict_types=1);
 
 namespace GrotonSchool\Slim\GAE\Actions;
 
+use GrotonSchool\Slim\Norms\AbstractAction;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
+use Slim\Http\ServerRequest;
+use Slim\Http\Response;
 
-class EmptyAction
+class EmptyAction extends AbstractAction
 {
-    public function __invoke(RequestInterface $_, ResponseInterface $response)
-    {
+    protected function invokeHook(
+        ServerRequest $request,
+        Response $response
+    ): ResponseInterface {
         return $response;
     }
 }

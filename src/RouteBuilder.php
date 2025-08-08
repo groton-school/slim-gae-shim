@@ -5,11 +5,12 @@ declare(strict_types=1);
 namespace GrotonSchool\Slim\GAE;
 
 use GrotonSchool\Slim\GAE\Actions\EmptyAction;
+use GrotonSchool\Slim\Norms\RouteBuilderInterface;
 use Slim\App;
 use Slim\Interfaces\RouteCollectorProxyInterface;
 use Slim\Interfaces\RouteGroupInterface;
 
-class RouteBuilder
+class RouteBuilder implements RouteBuilderInterface
 {
     public static function define(App $app): RouteGroupInterface
     {

@@ -6,12 +6,13 @@ namespace GrotonSchool\Slim\GAE;
 
 use DI\ContainerBuilder;
 use Google\Cloud\Logging\LoggingClient;
+use GrotonSchool\Slim\Norms\DependenciesInterface;
 use Psr\Container\ContainerInterface;
 use Psr\Log\LoggerInterface;
 
-class Dependencies
+class Dependencies implements DependenciesInterface
 {
-    public static function inject(ContainerBuilder $containerBuilder)
+    public static function inject(ContainerBuilder $containerBuilder): void
     {
         $containerBuilder->addDefinitions([
             // log to Google Cloud Logger
