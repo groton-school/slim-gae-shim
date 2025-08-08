@@ -32,7 +32,7 @@ The shim expects a default [slim-skeleton](https://github.com/slimphp/Slim-Skele
 
    a. [Implement `SettingsInterface`](https://github.com/groton-school/slim-skeleton/blob/0b32f964d753376ed2c2d9af4460e96342bbe919/src/Application/Settings/SettingsInterface.php#L11-L12)
 
-   b. [Define the `SettingsInterface` dependency](https://github.com/groton-school/slim-skeleton/blob/0b32f964d753376ed2c2d9af4460e96342bbe919/app/dependencies.php#L46)
+   b. [Define the `SettingsInterface` dependency](https://github.com/groton-school/slim-skeleton/blob/f56b690c889c0a8088ad2fad93078158516b4063/app/dependencies.php#L30)
 
    c. [Inject the project URL and ID into your settings](https://github.com/groton-school/slim-skeleton/blob/0b32f964d753376ed2c2d9af4460e96342bbe919/app/dependencies.php#L21)
 
