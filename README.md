@@ -48,6 +48,6 @@ The shim expects a default [slim-skeleton](https://github.com/slimphp/Slim-Skele
 
    d. Run the deploy wizard (`pnpm run deploy`) interactively (after the first run, this will set environment variables to allow it to be run non-interactively in the future)
 
-### groton-school/slim-skeleton@dev-lti/gae
+### groton-school/slim-skeleton@dev-gae/app
 
-[groton-school/slim-skeleton](https://github.com/groton-school/slim-skeleton/tree/lti/gae) is the canonical example of how this shim is meant to be used.
+[groton-school/slim-skeleton](https://github.com/groton-school/slim-skeleton/tree/gae/app) is the canonical example of how this shim is meant to be used.
