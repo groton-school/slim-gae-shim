@@ -88,7 +88,7 @@ class Scripts
             }
         } elseif (is_dir($b)) {
             return false;
-        } else {
+        } elseif (file_exists($a) && file_exists($b)) {
             // Check if filesize is different
             if (filesize($a) !== filesize($b)) {
                 return false;
@@ -111,6 +111,7 @@ class Scripts
 
             return $result;
         }
+        return false;
     }
 
 
