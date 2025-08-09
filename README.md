@@ -26,19 +26,23 @@ The shim expects a default [slim-skeleton](https://github.com/slimphp/Slim-Skele
 
 2. Run `composer update`
 
-3. Optionally, add `*.bak` to your `.gitignore` to suppress backed up prior versions of the GAE config files
+3. Add `/node_modules/` to your `.gitignore`
 
-4. Inject Google App Engine environment variables into settings:
+4. Optionally, add `*.bak` to your `.gitignore` to suppress backed up prior versions of the GAE config files
 
-   a. [Implement `SettingsInterface`](https://github.com/groton-school/slim-skeleton/blob/0b32f964d753376ed2c2d9af4460e96342bbe919/src/Application/Settings/SettingsInterface.php#L11-L12)
+5. Inject Google App Engine environment variables into settings:
 
-   b. [Define the `SettingsInterface` dependency](https://github.com/groton-school/slim-skeleton/blob/f56b690c889c0a8088ad2fad93078158516b4063/app/dependencies.php#L30)
+   a. [Implement `SettingsInterface`](https://github.com/groton-school/slim-skeleton/blob/b03aae3a19f76cfe6e0e6c0150bc7624f0ccb15c/src/Application/Settings/SettingsInterface.php#L9)
 
-   c. [Inject the project URL and ID into your settings](https://github.com/groton-school/slim-skeleton/blob/0b32f964d753376ed2c2d9af4460e96342bbe919/app/dependencies.php#L21)
+   b. [Define the `SettingsInterface` dependency](https://github.com/groton-school/slim-skeleton/blob/b03aae3a19f76cfe6e0e6c0150bc7624f0ccb15c/app/dependencies.php#L14)
 
-5. Optionally (but recommendedly), suppress error log messages about Google App Engine start/stop requests by [defining routes for those requests](https://github.com/groton-school/slim-skeleton/blob/0b32f964d753376ed2c2d9af4460e96342bbe919/app/routes.php#L17)
+   c. [Inject the remaining dependencies](https://github.com/groton-school/slim-skeleton/blob/b03aae3a19f76cfe6e0e6c0150bc7624f0ccb15c/app/dependencies.php#L11)
 
-6. Deploy to Google App Engine using the [Node](https://nodejs.org) `deploy` wizard provided.
+   d. [Inject the project URL and ID into your settings](https://github.com/groton-school/slim-skeleton/blob/b03aae3a19f76cfe6e0e6c0150bc7624f0ccb15c/app/settings.php#L23-L25)
+
+6. Optionally (but recommendedly), suppress error log messages about Google App Engine start/stop requests by [defining routes for those requests](https://github.com/groton-school/slim-skeleton/blob/b03aae3a19f76cfe6e0e6c0150bc7624f0ccb15c/app/routes.php#L19)
+
+7. Deploy to Google App Engine using the [Node](https://nodejs.org) `deploy` wizard provided.
 
    a. Configure a [Billing Account](https://console.cloud.google.com/billing) with your Google Cloud account, if not already done.
 
