@@ -4,6 +4,16 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [1.3.1](https://github.com/groton-school/slim-gae-shim/compare/v1.3.0...v1.3.1) (2025-08-09)
+
+### Bug Fixes
+
+* Gracefully ignore missing files ([7c2869](https://github.com/groton-school/slim-gae-shim/commit/7c28696182e8f61a037b14931335079686716e96))
+* Return RouteGroupInterface from RouteBuilder::define() for consistency ([ffd828](https://github.com/groton-school/slim-gae-shim/commit/ffd828efac2da9dfbe92ce3ffaf572b48cc73699))
+
+
+---
+
 ## [1.3.0](https://github.com/groton-school/slim-gae-shim/compare/v1.2.1...v1.3.0) (2025-08-07)
 
 ### Features
