@@ -12,7 +12,7 @@ use Psr\Log\LoggerInterface;
 
 class Dependencies implements DependenciesInterface
 {
-    public static function inject(ContainerBuilder $containerBuilder): void
+    public function inject(ContainerBuilder $containerBuilder): void
     {
         $containerBuilder->addDefinitions([
             // log to Google Cloud Logger

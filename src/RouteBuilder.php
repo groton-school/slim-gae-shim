@@ -12,7 +12,7 @@ use Slim\Interfaces\RouteGroupInterface;
 
 class RouteBuilder implements RouteBuilderInterface
 {
-    public static function define(App $app): RouteGroupInterface
+    public function define(App $app): RouteGroupInterface
     {
         // return an empty string on GAE start/stop requests
         return $app->group('/_ah', function (RouteCollectorProxyInterface $ah) {

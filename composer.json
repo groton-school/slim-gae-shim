@@ -11,7 +11,7 @@
   "require": {
     "composer/composer": "^2.8",
     "google/cloud-logging": "^1.32",
-    "groton-school/slim-norms": "^1.0",
+    "groton-school/slim-norms": "^2.0",
     "php-di/php-di": "^7.0",
     "psr/container": "^2.0",
     "psr/http-message": "^2.0",
