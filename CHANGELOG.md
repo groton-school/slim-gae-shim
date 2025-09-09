@@ -4,6 +4,15 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [2.0.0](https://github.com/groton-school/slim-gae-shim/compare/v1.3.1...v2.0.0) (2025-09-09)
+
+### ⚠ BREAKING CHANGES
+
+* Support constructor injection by making static members dynamic ([73c021](https://github.com/groton-school/slim-gae-shim/commit/73c0210bef38a904e4f45cee30d41cc372edf65e))
+
+
+---
+
 ## [1.3.1](https://github.com/groton-school/slim-gae-shim/compare/v1.3.0...v1.3.1) (2025-08-09)
 
 ### Bug Fixes
