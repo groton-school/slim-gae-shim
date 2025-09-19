@@ -4,6 +4,15 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [2.1.1](https://github.com/groton-school/slim-gae-shim/compare/v2.1.0...v2.1.1) (2025-09-19)
+
+### Bug Fixes
+
+* Normalize inner middleware definitions ([3391b8](https://github.com/groton-school/slim-gae-shim/commit/3391b8150861f054a834da4679892db4eebf11ff))
+
+
+---
+
 ## [2.1.0](https://github.com/groton-school/slim-gae-shim/compare/v2.0.0...v2.1.0) (2025-09-19)
 
 ### Features
