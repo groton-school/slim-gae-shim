@@ -4,6 +4,15 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [2.1.0](https://github.com/groton-school/slim-gae-shim/compare/v2.0.0...v2.1.0) (2025-09-19)
+
+### Features
+
+* Inject inner middleware into RouteBuilder ([da40d0](https://github.com/groton-school/slim-gae-shim/commit/da40d0c5e4cf38a5070f9c8bf8e446c83b396a60))
+
+
+---
+
 ## [2.0.0](https://github.com/groton-school/slim-gae-shim/compare/v1.3.1...v2.0.0) (2025-09-09)
 
 ### ⚠ BREAKING CHANGES
