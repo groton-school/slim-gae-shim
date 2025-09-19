@@ -13,7 +13,7 @@ use Slim\Interfaces\RouteGroupInterface;
 
 class RouteBuilder implements RouteBuilderInterface
 {
-    public function define(App $app, ?MiddlewareInterface ...$innerMiddleware): RouteGroupInterface
+    public function define(App $app, MiddlewareInterface|string|callable ...$innerMiddleware): RouteGroupInterface
     {
         // return an empty string on GAE start/stop requests
         $group = $app->group('/_ah', function (RouteCollectorProxyInterface $ah) {
