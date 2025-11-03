@@ -4,6 +4,15 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [2.1.2](https://github.com/groton-school/slim-gae-shim/compare/v2.1.1...v2.1.2) (2025-11-03)
+
+### Bug Fixes
+
+* Include update to TLS 1.2 as part of GAE configuration ([eac282](https://github.com/groton-school/slim-gae-shim/commit/eac282ca71ef8a1791698f3e08ea17394f1c419a))
+
+
+---
+
 ## [2.1.1](https://github.com/groton-school/slim-gae-shim/compare/v2.1.0...v2.1.1) (2025-09-19)
 
 ### Bug Fixes
