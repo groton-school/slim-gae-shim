@@ -1151,16 +1151,16 @@
     },
     {
       "name": "google/protobuf",
-      "version": "v4.32.1",
+      "version": "v4.33.0",
       "source": {
         "type": "git",
         "url": "https://github.com/protocolbuffers/protobuf-php.git",
-        "reference": "c4ed1c1f9bbc1e91766e2cd6c0af749324fe87cb"
+        "reference": "b50269e23204e5ae859a326ec3d90f09efe3047d"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/protocolbuffers/protobuf-php/zipball/c4ed1c1f9bbc1e91766e2cd6c0af749324fe87cb",
-        "reference": "c4ed1c1f9bbc1e91766e2cd6c0af749324fe87cb",
+        "url": "https://api.github.com/repos/protocolbuffers/protobuf-php/zipball/b50269e23204e5ae859a326ec3d90f09efe3047d",
+        "reference": "b50269e23204e5ae859a326ec3d90f09efe3047d",
         "shasum": ""
       },
       "require": {
@@ -1189,9 +1189,9 @@
         "proto"
       ],
       "support": {
-        "source": "https://github.com/protocolbuffers/protobuf-php/tree/v4.32.1"
+        "source": "https://github.com/protocolbuffers/protobuf-php/tree/v4.33.0"
       },
-      "time": "2025-09-14T05:14:52+00:00"
+      "time": "2025-10-15T20:10:28+00:00"
     },
     {
       "name": "groton-school/slim-norms",
@@ -3228,16 +3228,16 @@
     },
     {
       "name": "symfony/console",
-      "version": "v7.3.4",
+      "version": "v7.3.5",
       "source": {
         "type": "git",
         "url": "https://github.com/symfony/console.git",
-        "reference": "2b9c5fafbac0399a20a2e82429e2bd735dcfb7db"
+        "reference": "cdb80fa5869653c83cfe1a9084a673b6daf57ea7"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/symfony/console/zipball/2b9c5fafbac0399a20a2e82429e2bd735dcfb7db",
-        "reference": "2b9c5fafbac0399a20a2e82429e2bd735dcfb7db",
+        "url": "https://api.github.com/repos/symfony/console/zipball/cdb80fa5869653c83cfe1a9084a673b6daf57ea7",
+        "reference": "cdb80fa5869653c83cfe1a9084a673b6daf57ea7",
         "shasum": ""
       },
       "require": {
@@ -3302,7 +3302,7 @@
         "terminal"
       ],
       "support": {
-        "source": "https://github.com/symfony/console/tree/v7.3.4"
+        "source": "https://github.com/symfony/console/tree/v7.3.5"
       },
       "funding": [
         {
@@ -3322,7 +3322,7 @@
           "type": "tidelift"
         }
       ],
-      "time": "2025-09-22T15:31:00+00:00"
+      "time": "2025-10-14T15:46:26+00:00"
     },
     {
       "name": "symfony/deprecation-contracts",
@@ -3463,16 +3463,16 @@
     },
     {
       "name": "symfony/finder",
-      "version": "v7.3.2",
+      "version": "v7.3.5",
       "source": {
         "type": "git",
         "url": "https://github.com/symfony/finder.git",
-        "reference": "2a6614966ba1074fa93dae0bc804227422df4dfe"
+        "reference": "9f696d2f1e340484b4683f7853b273abff94421f"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/symfony/finder/zipball/2a6614966ba1074fa93dae0bc804227422df4dfe",
-        "reference": "2a6614966ba1074fa93dae0bc804227422df4dfe",
+        "url": "https://api.github.com/repos/symfony/finder/zipball/9f696d2f1e340484b4683f7853b273abff94421f",
+        "reference": "9f696d2f1e340484b4683f7853b273abff94421f",
         "shasum": ""
       },
       "require": {
@@ -3507,7 +3507,7 @@
       "description": "Finds files and directories via an intuitive fluent interface",
       "homepage": "https://symfony.com",
       "support": {
-        "source": "https://github.com/symfony/finder/tree/v7.3.2"
+        "source": "https://github.com/symfony/finder/tree/v7.3.5"
       },
       "funding": [
         {
@@ -3527,7 +3527,7 @@
           "type": "tidelift"
         }
       ],
-      "time": "2025-07-15T13:41:35+00:00"
+      "time": "2025-10-15T18:45:57+00:00"
     },
     {
       "name": "symfony/polyfill-ctype",
@@ -4522,16 +4522,16 @@
     },
     {
       "name": "friendsofphp/php-cs-fixer",
-      "version": "v3.88.2",
+      "version": "v3.89.1",
       "source": {
         "type": "git",
         "url": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer.git",
-        "reference": "a8d15584bafb0f0d9d938827840060fd4a3ebc99"
+        "reference": "f34967da2866ace090a2b447de1f357356474573"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/a8d15584bafb0f0d9d938827840060fd4a3ebc99",
-        "reference": "a8d15584bafb0f0d9d938827840060fd4a3ebc99",
+        "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/f34967da2866ace090a2b447de1f357356474573",
+        "reference": "f34967da2866ace090a2b447de1f357356474573",
         "shasum": ""
       },
       "require": {
@@ -4546,7 +4546,6 @@
         "php": "^7.4 || ^8.0",
         "react/child-process": "^0.6.6",
         "react/event-loop": "^1.5",
-        "react/promise": "^3.3",
         "react/socket": "^1.16",
         "react/stream": "^1.4",
         "sebastian/diff": "^4.0.6 || ^5.1.1 || ^6.0.2 || ^7.0",
@@ -4614,7 +4613,7 @@
       ],
       "support": {
         "issues": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/issues",
-        "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.88.2"
+        "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.89.1"
       },
       "funding": [
         {
@@ -4622,7 +4621,7 @@
           "type": "github"
         }
       ],
-      "time": "2025-09-27T00:24:15+00:00"
+      "time": "2025-10-24T12:05:10+00:00"
     },
     {
       "name": "marcocesarato/php-conventional-changelog",
