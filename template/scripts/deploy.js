@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import '@qui-cli/env/1Password.js';
 
 import gcloud from '@battis/partly-gcloudy';
