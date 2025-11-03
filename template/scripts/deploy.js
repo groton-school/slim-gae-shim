@@ -29,6 +29,7 @@ import path from 'node:path';
   });
 
   if (configure) {
+    await gcloud.app.update({ sslPolicy: 'TLS_VERSION_1_2' });
     await gcloud.services.enable(gcloud.services.API.CloudLoggingAPI);
 
     // FIXME don't enable firestore unless necessary
